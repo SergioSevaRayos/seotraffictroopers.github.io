@@ -1,0 +1,560 @@
+/* Estilos generales */
+body {
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f8f8;
+    min-width: 100vw;
+    overflow-x: hidden;
+    font-size: 22px;
+}
+/* Estilos para el ícono de WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px; /* Ajusta el tamaño según tu imagen */
+    height: 60px; /* Ajusta el tamaño según tu imagen */
+    background-color: transparent; /* Fondo transparente */
+
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.3s ease; /* Efecto de animación al pasar el mouse */
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1); /* Efecto de escala al pasar el mouse */
+}
+
+.whatsapp-float img {
+    width: 100%; /* Ajusta el tamaño de la imagen al contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #333;
+}
+
+/* Header */
+header {
+    background-image: url('banner.png');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    background-color: red;
+}
+
+.header-left {
+    background-color: #33333335;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 2px 5px rgb(17, 17, 17);
+}
+
+.header-left>img {
+    height: 400px;
+    width: auto;
+}
+
+.header-right h1 {
+    font-size: 80px;
+    letter-spacing: 15px;
+    margin: 0px;
+}
+
+.header-right button {
+    height: 40px;
+    background-color: #0056b3;
+    border-radius: 10px;
+    color: white;
+    font-size: 30px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Navegación */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 25px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Menú desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content li {
+    margin: 0;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+    font-size: 20px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #007bff;
+}
+.imagen-articulo {
+    float: right; /* Posiciona la imagen a la izquierda */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    max-width: 500px; /* Ancho máximo de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+/* Hero */
+.hero {
+    background-image: url('imagen-de-fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+    text-align: center;
+    margin: 0px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    
+}
+
+.cta {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #0056b3;
+}
+
+/* Secciones comunes */
+.destacados,
+.servicios,
+.quienes-somos,
+.info-inicio
+.informacion-ext,
+.blog-ext,
+.contacto {
+
+    display: flex; /* Habilitamos Flexbox */
+    flex-direction: column; /* Alineamos los elementos verticalmente */
+    align-items: center; /* Centramos los elementos horizontalmente */
+    text-align: justify; /* Centramos el texto dentro de los elementos */
+}
+
+.destacados > *,
+.servicios > *,
+.quienes-somos > *,
+.informacion-ext > *,
+.blog-ext > *,
+.contacto > * {
+    margin-bottom: 20px; /* Espacio entre elementos */
+    max-width: 80%; /* Ancho máximo del contenido */
+}
+
+/* Grid */
+.grid-container {
+    display: grid;
+    align-items: center;
+    gap: 30px;
+    padding: 40px;
+}
+.grid-item-blog{
+    display: grid;
+    padding: 30px;
+    height: auto;
+    justify-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.715);
+    transition: transform 0.3s ease;
+}
+.grid-item-blog:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 2px 5px rgba(0, 14, 117, 0.483);
+}
+.grid-item-blog h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+.grid-item-blog img {
+    height: 200px;
+}
+
+.grid-item {
+    display: grid;
+    padding: 30px;
+    height: auto;
+
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.715);
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 5px rgba(0, 14, 117, 0.483);
+}
+
+.grid-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+
+/* Paquetes */
+.paquete {
+    border: 1px solid #ced4da;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.paquete h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #212529;
+}
+
+.paquete p {
+    margin-bottom: 10px;
+    color: #495057;
+}
+
+.paquete ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.paquete li {
+    margin-bottom: 5px;
+}
+
+/* Blog */
+.blog > h2{
+    padding-left: 20px;
+}
+.grid-item > img{
+    height: 200px;
+    
+}
+.blog-ext {
+    background-color: #f8f9fa;
+    margin: 40px;
+}
+
+.blog-ext .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.blog-ext h2 {
+    font-size: 2.5rem;
+    color: #343a40;
+    font-weight: 600;
+}
+
+.blog-ext p {
+    font-size: 1.30rem;
+    margin-bottom: 25px;
+    line-height: 1.6;
+    color: #495057;
+}
+
+.blog-ext ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 25px;
+}
+
+.blog-ext li {
+    margin-bottom: 10px;
+}
+
+/* Contacto */
+#contact-form{
+    width: 700px;
+}
+#mensaje{
+    height: 200px;
+}
+.contacto form {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.contacto label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contacto input,
+.contacto textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contacto button {
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contacto button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive */
+/* Estilos para tablets (pantallas de 768px o menos) */
+@media (max-width: 768px) {
+    /* Ajustes generales */
+    body {
+        font-size: 18px; /* Reducir el tamaño de la fuente para tablets */
+    }
+
+    /* Header */
+    .header-content {
+        flex-direction: column; /* Cambiar a disposición vertical en tablets */
+        text-align: center;
+    }
+
+    .header-left > img {
+        height: 300px; /* Reducir el tamaño de la imagen en tablets */
+    }
+
+    .header-right h1 {
+        font-size: 50px; /* Reducir el tamaño del título en tablets */
+        letter-spacing: 10px;
+    }
+
+    .header-right button {
+        font-size: 20px; /* Reducir el tamaño del botón en tablets */
+    }
+
+    .blog-ext{
+        margin: 10px;
+        padding: 0px;
+    }
+    .blog-ext > p{
+    
+        padding: 0px;
+    }
+    /* Navegación */
+    .navegacion{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .navegacion > li{
+        margin: 9px;
+    }
+    .navegacion > li > a{
+        font-size: 20px
+    }
+
+    /* Hero */
+    .hero h1 {
+        font-size: 2rem; /* Reducir el tamaño del título en tablets */
+    }
+
+    .hero p {
+        font-size: 1.2rem; /* Reducir el tamaño del texto en tablets */
+    }
+
+    /* Grid */
+    .grid-container {
+        grid-template-columns: 1fr; /* Cambiar a una sola columna en tablets */
+        padding: 20px;
+    }
+
+    .grid-item-blog,
+    .grid-item {
+        padding: 20px; /* Reducir el padding en tablets */
+    }
+
+    .grid-item-blog img,
+    .grid-item img {
+        height: 150px; /* Reducir el tamaño de las imágenes en tablets */
+    }
+    .descripcion-inicio{
+        display: grid;
+        justify-items: center
+    }
+
+    .imagen-articulo{
+        height: 250px;
+    }
+
+    /* Contacto */
+    #contact-form {
+        width: 100%; /* Hacer el formulario más estrecho en tablets */
+    }
+
+    #mensaje {
+        height: 150px; /* Reducir la altura del área de texto en tablets */
+    }
+}
+
+/* Estilos para móviles (pantallas de 480px o menos) */
+@media (max-width: 480px) {
+    /* Ajustes generales */
+    body {
+        font-size: 16px; /* Reducir el tamaño de la fuente para móviles */
+    }
+
+    /* Header */
+    .header-left > img {
+        height: 200px; /* Reducir el tamaño de la imagen en móviles */
+    }
+
+    .header-right h1 {
+        font-size: 40px; /* Reducir el tamaño del título en móviles */
+        letter-spacing: 5px;
+    }
+
+    .header-right button {
+        font-size: 18px; /* Reducir el tamaño del botón en móviles */
+    }
+    header {
+        display: grid;
+        justify-items: center;
+    }
+
+    .navegacion{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .navegacion > li{
+        margin: 9px;
+    }
+    .navegacion > li > a{
+        font-size: 20px
+    }
+
+        
+    .contacto{
+        margin: 20px;
+    }
+
+    .blog-ext {
+        background-color: #f8f9fa;
+        margin: 10px;
+    }
+    /* Hero */
+    .hero h1 {
+        font-size: 1.5rem; /* Reducir el tamaño del título en móviles */
+    }
+
+    .hero p {
+        font-size: 1rem; /* Reducir el tamaño del texto en móviles */
+    }
+
+    /* Grid */
+    .grid-item-blog,
+    .grid-item {
+        padding: 15px; /* Reducir el padding en móviles */
+    }
+
+    .grid-item-blog img,
+    .grid-item img {
+        height: 120px; /* Reducir el tamaño de las imágenes en móviles */
+    }
+
+    /* Contacto */
+    #mensaje {
+        height: 100px; /* Reducir la altura del área de texto en móviles */
+    }
+
+    /* Footer */
+    footer {
+        padding: 10px; /* Reducir el padding en móviles */
+    }
+}
