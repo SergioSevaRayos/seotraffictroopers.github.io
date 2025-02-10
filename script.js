@@ -1,39 +1,50 @@
-// Script para el menú móvil
-const menuToggle = document.querySelector('.menu-toggle'); // Selector correcto
+// script.js
+let emailjsInitialized = false;
+
+// Script para el menú móvil (si lo tienes en este archivo)
+const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 
-// Script para el formulario de contacto
-document.getElementById('formulario-contacto').addEventListener('submit', function (e) {
-  e.preventDefault();
-
-  const nombre = document.getElementById('nombre').value;
-  const email = document.getElementById('email').value;
-  const mensaje = document.getElementById('mensaje').value;
-
-  // Validación básica (puedes agregar más validaciones)
-  if (!nombre || !email || !mensaje) {
-    alert("Por favor, completa todos los campos.");
-    return;
-  }
-
-  const params = {
-    from_name: nombre,
-    from_email: email,
-    message: mensaje,
-  };
-
-  // Reemplaza con tus credenciales reales
-  const serviceId = "TU_SERVICE_ID";  // ***REEMPLAZA***
-  const templateId = "TU_TEMPLATE_ID"; // ***REEMPLAZA***
-
-  emailjs.send(serviceId, templateId, params)
-    .then(function (response) {
-      console.log("Correo enviado con éxito!", response);
-      document.getElementById('mensaje-enviado').classList.remove('oculto');
-      document.getElementById('formulario-contacto').reset(); // Corregido: cierre correcto de la función
-    })
-    .catch(function (error) {
-      console.error("Error al enviar el correo:", error);
-      alert("Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo.");
+if (menuToggle && navLinks) {
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
     });
+}
+
+
+document.addEventListener('DOMContentLoaded', function() {
+
+    // Actualizar el año del footer
+    document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+
+    // Código para EmailJS (todo dentro del DOMContentLoaded)
+    const form = document.getElementById('contact-form');
+
+    if (form) {
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            if (!emailjsInitialized) {
+                console.error("EmailJS aún no se ha inicializado. Inténtalo de nuevo más tarde.");
+                alert("Hubo un error al enviar tu mensaje. Inténtalo de nuevo más tarde.");
+                return;
+            }
+
+            emailjs.sendForm('service_cv2dwjk', 'template_90coegc', this)
+                .then(function() {
+                    console.log('¡Mensaje enviado correctamente!');
+                    alert('¡Gracias por tu mensaje! Te contactaremos pronto.');
+                    form.reset();
+                }, function(error) {
+                    console.error('Error al enviar el mensaje:', error);
+                    alert('Hubo un error al enviar tu mensaje. Inténtalo de nuevo más tarde.');
+                });
+        });
+    } else {
+        console.error("No se encontró el formulario con ID 'contact-form'.");
+    }
+
+    // Inicialización de EmailJS (DENTRO del DOMContentLoaded)
+    emailjs.init("-I_WUsxCAsER-kg5C"); // Reemplaza con tu Public Key de EmailJS
+    emailjsInitialized = true; // Establece la bandera a true
 });

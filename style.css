@@ -484,7 +484,7 @@ footer {
 @media (max-width: 480px) {
     /* Ajustes generales */
     body {
-        font-size: 16px; /* Reducir el tamaño de la fuente para móviles */
+        font-size: 22px; /* Reducir el tamaño de la fuente para móviles */
     }
 
     /* Header */
@@ -518,8 +518,9 @@ footer {
     .navegacion > li > a{
         font-size: 20px
     }
-
-        
+    .whatsapp-float {
+        bottom: 170px;
+    }
     .contacto{
         margin: 20px;
     }
@@ -534,7 +535,7 @@ footer {
     }
 
     .hero p {
-        font-size: 1rem; /* Reducir el tamaño del texto en móviles */
+        font-size: 20px; /* Reducir el tamaño del texto en móviles */
     }
 
     /* Grid */
