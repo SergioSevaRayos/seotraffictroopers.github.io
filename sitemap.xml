@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://www.seotraffictroopers.com/index.html</loc>
+    <lastmod>2025-02-12</lastmod>
+    <changefreq>weekly</changefreq> <--- Cambiado a weekly
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.seotraffictroopers.com/servicios.html</loc>
+    <lastmod>2025-02-12</lastmod>
+    <changefreq>monthly</changefreq> <--- Cambiado a monthly
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.seotraffictroopers.com/blog.html</loc>
+    <lastmod>2025-02-12</lastmod>
+    <changefreq>weekly</changefreq>  <--- Se mantiene como weekly (si publicas regularmente)
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.seotraffictroopers.com/artimportanciaseo.html</loc>
+    <lastmod>2025-02-12</lastmod>
+    <changefreq>monthly</changefreq> 
+    <priority>0.8</priority>
+    <image:image>
+    <image:loc>https://www.seotraffictroopers.com/media/img/seo.webp</image:loc> <--- URL actualizada de la imagen
+    <image:caption>El SEO es crucial para el éxito online de cualquier negocio. Una buena estrategia SEO mejora la visibilidad en los motores de búsqueda.</image:caption>
+    <image:title>Importancia del SEO</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.seotraffictroopers.com/arterroresseo.html</loc>
+    <lastmod>2025-02-12</lastmod>
+    <changefreq>monthly</changefreq> <--- Se mantiene como monthly (para artículos antiguos)
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.seotraffictroopers.com/media/img/seoerror.webp</image:loc>
+      <image:caption>Evita errores comunes de SEO que dañan tu estrategia online. Optimiza tu presencia y atrae tráfico de calidad.</image:caption>
+      <image:title>10 errores de SEO que debes evitar
+      </image:title>
+    </image:image>
+  </url>
+  <url> 
+    <loc>https://www.seotraffictroopers.com/artkyeseo.html</loc>
+    <lastmod>2025-02-12</lastmod>
+    <changefreq>monthly</changefreq> <--- Se mantiene como monthly (para artículos antiguos)
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.seotraffictroopers.com/media/img/seokey.webp</image:loc>
+      <image:caption>Palabras clave: la base del SEO. Investiga y selecciona los términos que usan tus clientes para atraer tráfico.</image:caption>
+      <image:title>Cómo elegir las palabras clave adecuadas para tu estrategia SEO</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.tuweb-auditor.com/contacto</loc>
+    <lastmod>2025-02-12</lastmod>
+    <changefreq>monthly</changefreq> <--- Se mantiene como monthly
+    <priority>0.7</priority>
+  </url>
+
+</urlset>
