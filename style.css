@@ -57,6 +57,7 @@ header {
     color: #fff;
     background-color: red;
     background-attachment: fixed; /* Esta línea es la clave */
+    padding: 30px;
 }
 
 .header-left {
@@ -71,7 +72,7 @@ header {
     width: auto;
 }
 
-.header-right h1 {
+.header-right h2 {
     font-size: 80px;
     letter-spacing: 15px;
     margin: 0px;
@@ -147,6 +148,7 @@ nav a:hover {
 
 .dropdown-content a:hover {
     background-color: #007bff;
+    color: white;
 }
 .imagen-articulo {
     float: right; /* Posiciona la imagen a la izquierda */
@@ -187,7 +189,7 @@ nav a:hover {
 }
 
 /* Secciones comunes */
-.destacados,
+
 .servicios,
 .quienes-somos,
 .info-inicio
@@ -201,14 +203,14 @@ nav a:hover {
     text-align: justify; /* Centramos el texto dentro de los elementos */
 }
 
-.destacados > *,
+
 .servicios > *,
 .quienes-somos > *,
 .informacion-ext > *,
 .blog-ext > *,
 .contacto > * {
     margin-bottom: 20px; /* Espacio entre elementos */
-    max-width: 80%; /* Ancho máximo del contenido */
+    max-width: 90%; /* Ancho máximo del contenido */
 }
 
 /* Grid */
@@ -216,8 +218,13 @@ nav a:hover {
     display: grid;
     align-items: center;
     gap: 30px;
-    padding: 40px;
+    margin: 30px;
+
 }
+.grid-container > h1, h2{
+    text-align: center;
+}
+
 .grid-item-blog{
     display: grid;
     padding: 30px;
@@ -233,7 +240,7 @@ nav a:hover {
     box-shadow: 0 2px 5px rgba(0, 14, 117, 0.483);
 }
 .grid-item-blog h3 {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     margin-bottom: 15px;
 }
 .grid-item-blog img {
@@ -294,9 +301,13 @@ nav a:hover {
 }
 
 /* Blog */
-.blog > h2{
-    padding-left: 20px;
+.blog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+
 .grid-item > img{
     height: 200px;
     
@@ -380,14 +391,125 @@ nav a:hover {
 
 /* Footer */
 footer {
-    background-color: #333;
+    background-color: #0056b3;
     color: #fff;
-    padding: 20px;
+    padding: 40px;
     text-align: center;
 }
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  
+}
+.footer-logo > img{
+    width: 150px;
+    height: auto;
+}
+.footer-links{
+    list-style: none;
+    
+}
+.footer-links > li > a{
+    list-style: none;
+    color: white;
+}
+
 
 /* Responsive */
 /* Estilos para tablets (pantallas de 768px o menos) */
+@media (max-width: 950px) {
+    /* Ajustes generales */
+    body {
+        font-size: 18px; /* Reducir el tamaño de la fuente para tablets */
+    }
+
+    /* Header */
+    .header-content {
+        flex-direction: column; /* Cambiar a disposición vertical en tablets */
+        text-align: center;
+    }
+
+    .header-left > img {
+        height: 300px; /* Reducir el tamaño de la imagen en tablets */
+    }
+
+    .header-right h2 {
+        font-size: 50px; /* Reducir el tamaño del título en tablets */
+        letter-spacing: 10px;
+    }
+
+    .header-right button {
+        font-size: 20px; /* Reducir el tamaño del botón en tablets */
+    }
+
+
+    .blog-ext{
+        margin: 10px;
+        padding: 0px;
+    }
+    .blog-ext > p{
+    
+        padding: 0px;
+    }
+    /* Navegación */
+    .navegacion{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .navegacion > li{
+        margin: 9px;
+    }
+    .navegacion > li > a{
+        font-size: 20px;
+    }
+   
+    /* Hero */
+    .hero h1 {
+        font-size: 2rem; /* Reducir el tamaño del título en tablets */
+    }
+
+    .hero p {
+        font-size: 1.2rem; /* Reducir el tamaño del texto en tablets */
+    }
+
+    /* Grid */
+    .grid-container {
+        grid-template-columns: 1fr; /* Cambiar a una sola columna en tablets */
+        padding: 20px;
+    }
+
+    .grid-item-blog,
+    .grid-item {
+        padding: 20px; /* Reducir el padding en tablets */
+    }
+
+    .grid-item-blog img,
+    .grid-item img {
+        height: 150px; /* Reducir el tamaño de las imágenes en tablets */
+    }
+    .descripcion-inicio{
+        display: grid;
+        justify-items: center
+    }
+
+    .imagen-articulo{
+        height: 250px;
+    }
+
+    /* Contacto */
+    #contact-form {
+        width: 100%; /* Hacer el formulario más estrecho en tablets */
+    }
+
+    #mensaje {
+        height: 150px; /* Reducir la altura del área de texto en tablets */
+    }
+}
 @media (max-width: 768px) {
     /* Ajustes generales */
     body {
@@ -562,5 +684,23 @@ footer {
     /* Footer */
     footer {
         padding: 10px; /* Reducir el padding en móviles */
+    }
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 15px;
+      
+    }
+    .footer-logo > img{
+        width: 100px;
+        height: auto;
+    }
+    .footer-links{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;
     }
 }
