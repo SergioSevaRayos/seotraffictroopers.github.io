@@ -235,6 +235,13 @@ nav a:hover {
     color: white;
 }
 
+
+.foto-quien{
+    height: 200px;
+    width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
 /* Secciones comunes */
 
 .servicios,
@@ -295,6 +302,9 @@ nav a:hover {
 }
 
 .grid-item {
+    opacity: 0; /* Inicialmente invisible */
+    transform: translateY(50px); /* Desplazamiento inicial hacia abajo */
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out; /* Transición más lenta */
     display: flex;
     justify-content: space-around;
     padding: 30px;
@@ -304,6 +314,10 @@ nav a:hover {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.715);
     transition: transform 0.3s ease;
+}
+.grid-item.visible {
+    opacity: 1; /* Visible */
+    transform: translateY(0); /* Sin desplazamiento */
 }
 .grid-item > div > img{
     height: 200px;
@@ -612,7 +626,7 @@ footer {
     .navegacion > li > a{
         font-size: 20px;
     }
-   
+ 
     /* Hero */
     .hero h1 {
         font-size: 2rem; /* Reducir el tamaño del título en tablets */
