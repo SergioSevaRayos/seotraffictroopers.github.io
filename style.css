@@ -36,7 +36,37 @@ body {
     height: auto; /* Mantiene la proporción de la imagen */
 
 }
-
+.aviso-legal{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+}
+.politica-privacidad{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+}
+.politica-cookies{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+}
+.sitemap {
+    display: flex;
+    flex-direction: column; /* Organiza los enlaces en columna */
+    padding: 40px;
+}
+.sitemap ul {
+    list-style: none; /* Elimina los puntos de la lista */
+    padding-left: 20px; /* Añade un margen a la izquierda */
+}
+.sitemap a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #007bff; /* Color azul para los enlaces */
+}
 a {
     text-decoration: none;
     color: #007bff;
@@ -157,21 +187,37 @@ nav a:hover {
     height: auto; /* Altura automática para mantener la proporción */
 }
 /* Hero */
-.hero {
-
+.hero-arriba {
     color: #000000;
     text-align: center;
     margin-bottom: 40px;
+    border-radius: 20px;
+    padding: 30px;
+}
+.hero {
+    background-image: url(media/img/banner-hero3.webp);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+    color: white;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 30px;
 }
 
-.hero h1 {
+.hero h2 {
+    text-shadow: 2px 2px 3px black;
     font-size: 3rem;
     margin-bottom: 20px;
+    color: white;
 }
 
 .hero p {
-    font-size: 1.5rem;
-    
+    text-shadow: 2px 2px 3px black;
+    font-size: 1.6rem;
+    color: white;
+    font-weight: bold;
 }
 
 .cta {
@@ -185,7 +231,8 @@ nav a:hover {
 }
 
 .cta:hover {
-    background-color: #0056b3;
+    background-color: #333;
+    color: white;
 }
 
 /* Secciones comunes */
@@ -248,14 +295,20 @@ nav a:hover {
 }
 
 .grid-item {
-    display: grid;
+    display: flex;
+    justify-content: space-around;
     padding: 30px;
     height: auto;
-
+    align-items: center;
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.715);
     transition: transform 0.3s ease;
+}
+.grid-item > div > img{
+    height: 200px;
+    width: auto;
+
 }
 
 .grid-item:hover {
@@ -395,6 +448,7 @@ footer {
     color: #fff;
     padding: 40px;
     text-align: center;
+    border-top: 4px solid #333;
 }
 .footer-content{
     display: flex;
