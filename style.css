@@ -626,7 +626,9 @@ footer {
     .navegacion > li > a{
         font-size: 20px;
     }
- 
+    .hero {
+        background-image:none;
+    }
     /* Hero */
     .hero h1 {
         font-size: 2rem; /* Reducir el tamaño del título en tablets */
