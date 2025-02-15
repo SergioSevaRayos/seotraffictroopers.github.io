@@ -10,6 +10,105 @@ body {
     overflow-x: hidden;
     font-size: 22px;
 }
+
+/* Estilos generales */
+.herramientas {
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+.hero {
+    text-align: center;
+    
+}
+
+.hero h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.cta {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Estilos del generador de robots.txt */
+.generador-robots {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.generador-robots h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.generador-robots label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.generador-robots input[type="text"],
+.generador-robots textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.generador-robots .directiva {
+    border: 1px solid #eee;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.generador-robots .remove-directive {
+    margin-left: 10px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.generador-robots button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.generador-robots textarea {
+    height: 200px;
+}
+
+.generador-robots #download-link {
+    display: none;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
 /* Estilos para el ícono de WhatsApp */
 .whatsapp-float {
     position: fixed;
@@ -138,7 +237,7 @@ nav li {
 nav a {
     text-decoration: none;
     color:  white;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 nav a:hover {
@@ -180,6 +279,7 @@ nav a:hover {
     background-color: #007bff;
     color: white;
 }
+
 .imagen-articulo {
     float: right; /* Posiciona la imagen a la izquierda */
     margin-right: 20px; /* Espacio entre la imagen y el texto */
@@ -202,7 +302,7 @@ nav a:hover {
     
     color: white;
     text-align: center;
-    margin-bottom: 40px;
+
     padding: 30px;
 }
 
@@ -234,13 +334,41 @@ nav a:hover {
     background-color: #333;
     color: white;
 }
-
-
+.quien-soy{
+    margin: 30px;
+   
+}
+.quien-soy > h1{
+    text-align: center;
+   
+}
+.quien-soy > p{
+    text-align: justify;
+   
+}
 .foto-quien{
+    float: right; /* Posiciona la imagen a la izquierda */
     height: 200px;
     width: auto;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
+    margin: 30px;
+}
+.foto-spa{
+    float: left; /* Posiciona la imagen a la izquierda */
+    height: 300px;
+    width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: 30px;
+}
+.foto-spa2{
+    float: right; /* Posiciona la imagen a la izquierda */
+    height: 500px;
+    width: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: 30px;
 }
 /* Secciones comunes */
 
@@ -529,6 +657,7 @@ footer {
         justify-content: space-around;
         align-items: flex-start;
     }
+   
     .navegacion > li{
         margin: 9px;
     }
@@ -537,6 +666,9 @@ footer {
     }
    
     /* Hero */
+    .hero{
+        margin-bottom: 0px;
+    }
     .hero h1 {
         font-size: 2rem; /* Reducir el tamaño del título en tablets */
     }
@@ -556,10 +688,7 @@ footer {
         padding: 20px; /* Reducir el padding en tablets */
     }
 
-    .grid-item-blog img,
-    .grid-item img {
-        height: 150px; /* Reducir el tamaño de las imágenes en tablets */
-    }
+    
     .descripcion-inicio{
         display: grid;
         justify-items: center
@@ -576,6 +705,9 @@ footer {
 
     #mensaje {
         height: 150px; /* Reducir la altura del área de texto en tablets */
+    }
+    .footer-links > li > a{
+        font-size: 20px;
     }
 }
 @media (max-width: 768px) {
@@ -627,7 +759,11 @@ footer {
         font-size: 20px;
     }
     .hero {
-        background-image:none;
+        background-image:url(media/img/banner-hero5.webp);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-bottom: 0px;
     }
     /* Hero */
     .hero h1 {
@@ -640,19 +776,20 @@ footer {
 
     /* Grid */
     .grid-container {
+        display: flex;
+        flex-direction: column;
         grid-template-columns: 1fr; /* Cambiar a una sola columna en tablets */
-        padding: 20px;
+        margin: 0px;
     }
 
     .grid-item-blog,
     .grid-item {
-        padding: 20px; /* Reducir el padding en tablets */
+        display: flex;
+        flex-direction: column-reverse;
+
     }
 
-    .grid-item-blog img,
-    .grid-item img {
-        height: 150px; /* Reducir el tamaño de las imágenes en tablets */
-    }
+   
     .descripcion-inicio{
         display: grid;
         justify-items: center
@@ -669,6 +806,9 @@ footer {
 
     #mensaje {
         height: 150px; /* Reducir la altura del área de texto en tablets */
+    }
+    .footer-links > li > a{
+        font-size: 20px;
     }
 }
 
@@ -721,6 +861,30 @@ footer {
     .contacto{
         margin: 20px;
     }
+    .quien-soy{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .foto-quien {
+        
+        width: 290px;
+        height: auto;
+    }
+    .foto-spa {
+        float: none;
+        
+        width: 200px;
+        height: auto;
+    }
+    .foto-spa2 {
+        float: none;
+        width: 150px;
+        height: auto;
+    }
+    .blog > h1{
+        margin: 20px;
+    }
 
     .blog-ext {
         background-color: #f8f9fa;
@@ -738,12 +902,16 @@ footer {
     /* Grid */
     .grid-item-blog,
     .grid-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding: 15px; /* Reducir el padding en móviles */
     }
 
     .grid-item-blog img,
     .grid-item img {
-        height: 120px; /* Reducir el tamaño de las imágenes en móviles */
+        width: 100px;
+        height: auto; /* Reducir el tamaño de las imágenes en móviles */
     }
 
     /* Contacto */
@@ -759,7 +927,7 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         font-size: 15px;
       
     }
@@ -773,4 +941,9 @@ footer {
         flex-wrap: nowrap;
         align-items: flex-start;
     }
+    .footer-links > li > a{
+        font-size: 20px;
+    }
+
+    
 }
