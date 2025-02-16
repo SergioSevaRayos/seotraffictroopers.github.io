@@ -16,8 +16,7 @@ header {
     text-shadow: 2px 2px 3px #000
 }
 
-.hero p,
-.instrucciones strong {
+.hero p strong {
     font-weight: 700
 }
 
@@ -39,7 +38,6 @@ body {
     font-size: 22px
 }
 
-
 .cta,
 .cta-herramientas {
     padding: 15px 30px;
@@ -48,7 +46,7 @@ body {
     background-color: #007bff;
     color: #fff;
     transition: background-color .3s;
-    margin: 30px;
+    margin: 30px
 }
 
 .cta {
@@ -71,11 +69,13 @@ body {
     flex-wrap: wrap;
     justify-content: space-around
 }
+
 .herramientas {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center
 }
+
 .herramienta {
     display: flex;
     flex-wrap: wrap;
@@ -86,18 +86,13 @@ body {
     cursor: pointer;
     justify-content: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
-    border-radius: 5px;
+    border-radius: 5px
 }
 
 .herramienta img {
     max-width: 100px;
     height: auto;
     margin-bottom: 10px
-}
-
-.descripcion-extendida {
-    display: none;
-    margin-top: 10px
 }
 
 .grid-item>div>img,
@@ -144,23 +139,6 @@ body {
     box-sizing: border-box
 }
 
-.generador-robots .directiva {
-    border: 1px solid #eee;
-    padding: 10px;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center
-}
-
-.generador-robots .remove-directive {
-    margin-left: 10px;
-    background-color: #dc3545;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer
-}
-
 .generador-metaetiquetas button,
 .generador-robots button,
 .generador-sitemap button {
@@ -181,8 +159,7 @@ nav a:hover {
 #mensaje,
 .generador-robots textarea,
 .generador-sitemap textarea,
-.grid-item-blog img,
-.grid-item>img {
+.grid-item-blog img {
     height: 200px
 }
 
@@ -204,25 +181,6 @@ nav a:hover {
 .blog-ext li,
 .seccion h4 {
     margin-bottom: 10px
-}
-
-.instrucciones {
-    margin-bottom: 20px;
-    background-color: #f8f9fa;
-    padding: 15px;
-    border: 1px solid #ced4da;
-    border-radius: 5px
-}
-
-.instrucciones ol,
-.instrucciones ul {
-    margin-left: 20px;
-    margin-bottom: 10px
-}
-
-.instrucciones li,
-.paquete li {
-    margin-bottom: 5px
 }
 
 .generador-metaetiquetas textarea {
@@ -280,7 +238,7 @@ a:hover {
 }
 
 header {
-    background-image: url('media/img/banner.png');
+    background-image: url(media/img/banner.png);
     box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
     color: #fff;
     background-color: red;
@@ -300,10 +258,7 @@ header {
     text-align: center
 }
 
-.header-left>img {
-    height: 300px;
-    width: auto
-}
+
 
 .header-right h2 {
     font-size: 80px;
@@ -365,8 +320,7 @@ nav a {
     margin: 0
 }
 
-.blog-ext ul,
-.paquete ul {
+.blog-ext ul {
     list-style-type: disc;
     margin-left: 20px
 }
@@ -437,9 +391,7 @@ h2 {
     text-align: center
 }
 
-.quien-soy>p {
-    text-align: justify
-}
+
 
 .foto-quien {
     float: right;
@@ -471,9 +423,7 @@ h2 {
 
 .blog-ext,
 .contacto,
-.info-inicio .informacion-ext,
-.quienes-somos,
-.servicios {
+.quienes-somos{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -482,9 +432,7 @@ h2 {
 
 .blog-ext>*,
 .contacto>*,
-.informacion-ext>*,
-.quienes-somos>*,
-.servicios>* {
+.quienes-somos>*{
     margin-bottom: 20px;
     max-width: 90%
 }
@@ -522,7 +470,7 @@ h2 {
     align-items: center
 }
 
-.grid-item.visible {
+.grid-item {
     opacity: 1;
     transform: translateY(0)
 }
@@ -532,29 +480,6 @@ h2 {
     margin-bottom: 15px
 }
 
-.paquete h3,
-.paquete p,
-.paquete ul {
-    margin-bottom: 10px
-}
-
-.paquete {
-    border: 1px solid #ced4da;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    background-color: #fff;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, .1)
-}
-
-.paquete h3 {
-    font-size: 1.8rem;
-    color: #212529
-}
-
-.paquete p {
-    color: #495057
-}
 
 .blog {
     display: flex;
@@ -567,7 +492,7 @@ h2 {
     margin: 40px
 }
 
-.blog-ext .container {
+.blog-ext {
     max-width: 960px;
     margin: 0 auto;
     padding: 0 20px
@@ -640,20 +565,13 @@ footer {
     align-items: center
 }
 
-.footer-logo>img {
-    width: 150px;
-    height: auto
-}
 
-.footer-links>li>a {
-    list-style: none;
-    color: #fff
-}
+
+
 
 @media (max-width:950px) {
 
-    .blog-ext,
-    .blog-ext>p {
+    .blog-ext{
         padding: 0
     }
 
@@ -666,18 +584,14 @@ footer {
         text-align: center
     }
 
-    .header-left>img {
-        height: 300px
-    }
+
 
     .header-right h2 {
         font-size: 50px;
         letter-spacing: 10px
     }
 
-    .footer-links>li>a,
-    .header-right button,
-    .navegacion>li>a {
+    .header-right button{
         font-size: 20px
     }
 
@@ -693,9 +607,6 @@ footer {
         align-items: flex-start
     }
 
-    .navegacion>li {
-        margin: 9px
-    }
 
     .hero {
         margin-bottom: 0
@@ -735,16 +646,15 @@ footer {
     #mensaje {
         height: 150px
     }
-    
+
     .herramienta {
-        width: 45%; /* Dos columnas en pantallas medianas */
+        width: 45%
     }
 }
 
 @media (max-width:768px) {
 
-    .blog-ext,
-    .blog-ext>p {
+    .blog-ext{
         padding: 0
     }
 
@@ -757,18 +667,13 @@ footer {
         text-align: center
     }
 
-    .header-left>img {
-        height: 300px
-    }
 
     .header-right h1 {
         font-size: 50px;
         letter-spacing: 10px
     }
 
-    .footer-links>li>a,
-    .header-right button,
-    .navegacion>li>a {
+    .header-right button{
         font-size: 20px
     }
 
@@ -784,9 +689,7 @@ footer {
         align-items: flex-start
     }
 
-    .navegacion>li {
-        margin: 9px
-    }
+
 
     .hero {
         background-image: url(media/img/banner-hero5.webp);
@@ -833,9 +736,9 @@ footer {
     #mensaje {
         height: 150px
     }
-    
+
     .herramienta {
-        width: 45%; /* Dos columnas en pantallas pequeñas */
+        width: 45%
     }
 }
 
@@ -844,9 +747,7 @@ footer {
         font-size: 22px
     }
 
-    .header-left>img {
-        height: 200px
-    }
+  
 
     .header-right h1 {
         font-size: 40px;
@@ -870,19 +771,7 @@ footer {
         align-items: flex-start
     }
 
-    .navegacion>li {
-        margin: 9px
-    }
 
-    .navegacion>li>a {
-        font-size: 20px;
-        color: #ccc;
-        transition: color .2s
-    }
-
-    .navegacion>li>a:hover {
-        color: #007bff
-    }
 
     .whatsapp-float {
         bottom: 170px
@@ -925,7 +814,6 @@ footer {
         font-size: 1.5rem
     }
 
-    .footer-links>li>a,
     .hero p {
         font-size: 20px
     }
@@ -938,7 +826,7 @@ footer {
         padding: 15px
     }
 
-    .footer-logo>img,
+    
     .grid-item img,
     .grid-item-blog img {
         width: 100px;
@@ -967,16 +855,18 @@ footer {
         flex-wrap: nowrap;
         align-items: flex-start
     }
+
     .seo-herrramientas {
         height: 100px;
-        width: auto;
+        width: auto
     }
+
     .herramienta {
-        width: 90%; /* Una columna en pantallas muy pequeñas */
-        margin: 10px auto; /* Centrar la herramienta */
+        width: 90%;
+        margin: 10px auto
     }
 
     .herramienta img {
-        max-width: 80px; /* Reduce el tamaño del icono en móviles */
+        max-width: 80px
     }
 }
