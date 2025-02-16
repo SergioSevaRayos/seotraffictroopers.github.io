@@ -24,26 +24,26 @@
 
     <script type="application/ld+json">
         {
-          "@context": "https://schema.org",
-          "@type": "WebPage",
-          "name": "Generador de robots.txt - Herramientas SEO",
-          "description": "Crea tu archivo robots.txt personalizado de forma rápida y sencilla con nuestra herramienta gratuita.",
-          "url": "https://seotraffictroopers.com/creador-sitemap.html", // URL específica de la página
-          "image": "https://seotraffictroopers.com/media/img/seo-stitemap.webp", // Imagen relacionada con la herramienta
-          "mainEntity": {
-            "@type": "SoftwareApplication",
-            "name": "Generador de sitemap.xml",
-            "description": "Herramienta online para crear archivos sitemap.xml personalizados.",
-            "url": "https://seotraffictroopers.com/creador-sitemap.html", // URL de la herramienta
-            "operatingSystem": "Web Browser", // Opcional: especificar el sistema operativo
-            "applicationCategory": "SEO", // Opcional: categoría de la aplicación
-            "offers": { // Opcional: si ofreces la herramienta como parte de un paquete o servicio
-              "@type": "Offer",
-              "price": "0", // o "Consultar" si es parte de un servicio
-              "priceCurrency": "EUR"
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Generador de sitemap.xml Online",
+            "description": "Accede y crea tus sitemap.xml personalizados de forma rápida y sencilla con nuestra herramienta gratuita.",
+            "url": "https://seotraffictroopers.com/creador-sitemap.html", // URL correcta
+            "image": "https://seotraffictroopers.com/media/img/seo-sitemap.webp",
+            "mainEntity": {
+              "@type": "SoftwareApplication",
+              "name": "Herramienta online para crear sitemap.xml personalizados", // Nombre más específico
+              "description": "Crea sitemap.xml optimizados para SEO de forma rápida y sencilla. ¡Mejora tu posicionamiento en buscadores!", // Descripción más detallada
+              "operatingSystem": "Web Browser",
+              "applicationCategory": "sitemap.xml",
+              "version": "1.0", // Información sobre la versión
+              "author": { // Información sobre el autor o proveedor
+                "@type": "Organization",
+                "name": "SEO Traffic Troopers",
+                "url": "https://seotraffictroopers.com"
+              }
             }
           }
-        }
         </script>
     <link rel="sitemap" type="application/xml" title="Sitemap" href="https://seotraffictroopers.com/sitemap.xml">
 </head>
@@ -174,17 +174,17 @@
                     const priorityInput = document.getElementById('priority');
                     const sitemapOutput = document.getElementById('sitemap-output');
                     const downloadLinkSitemap = document.getElementById('download-link-sitemap');
-                
+
                     formSitemap.addEventListener('submit', (event) => {
                         event.preventDefault();
-                
+
                         const urls = urlsInput.value.split('\n').filter(url => url.trim() !== '');
                         const lastmod = lastmodInput.value;
                         const changefreq = changefreqInput.value;
                         const priority = priorityInput.value;
-                
+
                         let sitemapContent = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
-                
+
                         urls.forEach(url => {
                             sitemapContent += `\t<url>\n\t\t<loc>${url}</loc>\n`;
                             if (lastmod) {
@@ -192,11 +192,11 @@
                             }
                             sitemapContent += `\t\t<changefreq>${changefreq}</changefreq>\n\t\t<priority>${priority}</priority>\n\t</url>\n`;
                         });
-                
+
                         sitemapContent += '</urlset>';
-                
+
                         sitemapOutput.value = sitemapContent;
-                
+
                         const blob = new Blob([sitemapContent], { type: 'application/xml' });
                         const url = URL.createObjectURL(blob);
                         downloadLinkSitemap.href = url;
