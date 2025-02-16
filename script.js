@@ -31,3 +31,4 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", checkVisibility);
     checkVisibility(); // Verifica la visibilidad al cargar la página
 });
+
