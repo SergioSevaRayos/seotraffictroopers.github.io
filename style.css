@@ -1,10 +1,14 @@
 .sitemap a,
 .whatsapp-float,
 a {
-    text-decoration: none
+    text-decoration: none;
 }
 
-.hero,
+p {
+    text-align: justify;
+}
+
+
 header {
     background-size: cover;
     background-position: center;
@@ -32,7 +36,7 @@ body {
     letter-spacing: 1px;
     line-height: 1.6;
     color: #333;
-    background-color: #f8f8f8;
+    background-color: whitesmoke;
     min-width: 100vw;
     overflow-x: hidden;
     font-size: 22px
@@ -43,8 +47,8 @@ body {
     padding: 15px 30px;
     border-radius: 5px;
     font-size: 1.1rem;
-    background-color: #007bff;
-    color: #fff;
+    background-color: gold;
+    color: black;
     transition: background-color .3s;
     margin: 30px
 }
@@ -77,17 +81,27 @@ body {
 }
 
 .herramienta {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
+    display: grid;
+    justify-items: center;
+    transition: transform .3s;
     width: 30%;
     margin-bottom: 20px;
     padding: 10px;
-    cursor: pointer;
-    justify-content: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
-    border-radius: 5px
+    box-shadow: 0 2px 5px rgba(0, 14, 117, .483);
+    border-radius: 12px;
+    background-color: white;
 }
+
+.herramienta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 5px rgba(124, 112, 0, 0.781)
+}
+
+.herramienta>p {
+    text-align: justify;
+    margin: 10px;
+}
+
 
 .herramienta img {
     max-width: 100px;
@@ -142,8 +156,8 @@ body {
 .generador-metaetiquetas button,
 .generador-robots button,
 .generador-sitemap button {
-    background-color: #007bff;
-    color: #fff;
+    background-color: gold;
+    color: black;
     border: none;
     padding: 10px 20px;
     margin-right: 10px;
@@ -153,7 +167,7 @@ body {
 .sitemap a,
 a,
 nav a:hover {
-    color: #007bff
+    color: rgb(173, 148, 2);
 }
 
 #mensaje,
@@ -241,21 +255,26 @@ header {
     background-image: url(media/img/banner.png);
     box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
     color: #fff;
-    background-color: red;
-    padding: 30px
+    padding: 30px;
+    border-bottom: 8px solid;
+    border-image: linear-gradient(to right, #333, gold, #333) 9;
 }
 
 .header-left {
     background-color: #33333335;
     margin: 0;
     padding: 0;
-    box-shadow: 0 2px 5px #111
+    box-shadow: 0 2px 5px #474747;
+    border-radius: 12px;
 }
 
-.hero,
+
 .hero-arriba {
     padding: 30px;
     text-align: center
+}
+.hero-arriba > p {
+    text-align: center;
 }
 
 
@@ -263,14 +282,15 @@ header {
 .header-right h2 {
     font-size: 80px;
     letter-spacing: 15px;
-    margin: 0
+    margin: 0;
+    text-shadow: 2px 2px 1px #000;
 }
 
 .header-right button {
     height: 40px;
-    background-color: #0056b3;
+    background-color: gold;
     border-radius: 10px;
-    color: #fff;
+    color: black;
     font-size: 30px
 }
 
@@ -299,7 +319,7 @@ nav li {
 }
 
 nav a {
-    color: #fff
+    color: white
 }
 
 .dropdown {
@@ -336,13 +356,14 @@ nav a {
 }
 
 .dropdown-content a:hover {
-    background-color: #007bff;
-    color: #fff
+    background-color: gold;
+    color: black
 }
 
 .contacto button:hover,
 footer {
-    background-color: #0056b3
+
+    background-color: #333;
 }
 
 .imagen-articulo {
@@ -357,17 +378,54 @@ footer {
     border-radius: 20px
 }
 
-.foto-quien,
 .foto-spa {
-    border-radius: 5px;
+    border-radius: 12px;
     width: auto;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
-    margin: 30px
+    margin: 30px;
+    float: right;
+    height: 200px;
 }
 
 .hero {
-    background-image: url(media/img/banner-hero3.webp);
-    color: #fff
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-top: 8px solid;
+    border-image: linear-gradient(to right, #333, gold, #333) 9;
+}
+
+.hero video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(5px);
+
+}
+
+
+.hero::before {
+    /* Pseudo-elemento para el fondo */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Imagen de fondo */
+    background-size: cover;
+
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    color: #333;
+    text-align: center;
+    padding: 20px;
 }
 
 .hero h2 {
@@ -377,6 +435,7 @@ footer {
 }
 
 .hero p {
+    text-align: center;
     font-size: 1.6rem;
     color: #fff
 }
@@ -392,25 +451,12 @@ h2 {
 }
 
 
-
-.foto-quien {
-    float: right;
-    height: 200px
-}
-
 .foto-spa {
     float: left;
-    height: 300px
+    height: 400px
 }
 
-.foto-spa2 {
-    float: right;
-    height: 500px;
-    width: auto;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
-    border-radius: 5px;
-    margin: 30px
-}
+
 
 .grid-item,
 .grid-item-blog {
@@ -423,7 +469,7 @@ h2 {
 
 .blog-ext,
 .contacto,
-.quienes-somos{
+.quienes-somos {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -432,7 +478,7 @@ h2 {
 
 .blog-ext>*,
 .contacto>*,
-.quienes-somos>*{
+.quienes-somos>* {
     margin-bottom: 20px;
     max-width: 90%
 }
@@ -453,7 +499,7 @@ h2 {
 .grid-item-blog:hover,
 .grid-item:hover {
     transform: translateY(-5px);
-    box-shadow: 0 2px 5px rgba(0, 14, 117, .483)
+    box-shadow: 0 2px 5px rgba(124, 112, 0, 0.781)
 }
 
 .grid-item-blog h3 {
@@ -489,13 +535,7 @@ h2 {
 
 .blog-ext {
     background-color: #f8f9fa;
-    margin: 40px
-}
-
-.blog-ext {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 0 20px
+    margin: 10px
 }
 
 .blog-ext h2 {
@@ -542,8 +582,8 @@ h2 {
 
 .contacto button {
     padding: 12px 25px;
-    background-color: #007bff;
-    color: #fff;
+    background-color: gold;
+    color: black;
     border: none;
     border-radius: 5px;
     font-size: 1.1rem;
@@ -555,7 +595,8 @@ footer {
     color: #fff;
     padding: 40px;
     text-align: center;
-    border-top: 4px solid #333
+    border-top: 8px solid;
+    border-image: linear-gradient(to right, #333, gold, #333) 9;
 }
 
 .footer-content {
@@ -565,13 +606,27 @@ footer {
     align-items: center
 }
 
+.logotipo2STT-footer {
+    height: 120px;
+    width: auto;
+}
+
 
 
 
 
 @media (max-width:950px) {
+    .logotipo2STT-header {
+        height: 180px;
+        width: auto;
+    }
 
-    .blog-ext{
+    .logotipo2STT-footer {
+        height: 120px;
+        width: auto;
+    }
+
+    .blog-ext {
         padding: 0
     }
 
@@ -591,7 +646,7 @@ footer {
         letter-spacing: 10px
     }
 
-    .header-right button{
+    .header-right button {
         font-size: 20px
     }
 
@@ -654,7 +709,7 @@ footer {
 
 @media (max-width:768px) {
 
-    .blog-ext{
+    .blog-ext {
         padding: 0
     }
 
@@ -673,7 +728,7 @@ footer {
         letter-spacing: 10px
     }
 
-    .header-right button{
+    .header-right button {
         font-size: 20px
     }
 
@@ -691,14 +746,7 @@ footer {
 
 
 
-    .hero {
-        background-image: url(media/img/banner-hero5.webp);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        margin-bottom: 0
-    }
-
+  
     .hero h1 {
         font-size: 2rem
     }
@@ -747,7 +795,7 @@ footer {
         font-size: 22px
     }
 
-  
+
 
     .header-right h1 {
         font-size: 40px;
@@ -788,10 +836,7 @@ footer {
         align-items: center
     }
 
-    .foto-quien {
-        width: 290px;
-        height: auto
-    }
+
 
     .foto-spa {
         float: none;
@@ -826,7 +871,7 @@ footer {
         padding: 15px
     }
 
-    
+
     .grid-item img,
     .grid-item-blog img {
         width: 100px;
@@ -844,9 +889,8 @@ footer {
     .footer-content {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        align-items: flex-start;
-        font-size: 15px
+        align-items: center;
+        font-size: 15px;
     }
 
     .footer-links {
