@@ -273,7 +273,8 @@ header {
     padding: 30px;
     text-align: center
 }
-.hero-arriba > p {
+
+.hero-arriba>p {
     text-align: center;
 }
 
@@ -316,7 +317,8 @@ nav ul {
 .imagen-articulo {
     margin: 20px
 }
-nav li{
+
+nav li {
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -367,6 +369,71 @@ nav a {
 footer {
 
     background-color: #333;
+}
+
+#terminos-seo {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+#terminos-seo>img {
+    height: 150px;
+    width: 150px;
+}
+
+#terminos-seo h1 {
+    text-align: center;
+    /* Centrar el título */
+    margin-bottom: 20px;
+    /* Espacio debajo del título */
+    color: #333;
+    /* Color del título */
+}
+
+.terminos-lista {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+    align-content: space-around;
+
+}
+
+.termino {
+    width: 300px;
+    border: 1px solid #ccc;
+    /* Borde alrededor de cada término */
+    margin: 20px;
+    padding: 10px;
+    /* Espacio dentro de cada término */
+    border-radius: 5px;
+    /* Bordes redondeados */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+    transition: transform 0.2s ease-in-out;
+    /* Transición para el efecto hover */
+}
+
+.termino:hover {
+    transform: scale(1.01);
+    box-shadow: 0 2px 5px rgba(124, 112, 0, 0.781);
+    /* Escalar al hacer hover */
+}
+
+.termino h3 {
+    color: rgb(173, 148, 2);
+    text-align: center;
+}
+
+.termino p {
+    color: #333;
+    /* Color del texto del término */
+    line-height: 1.6;
+    /* Interlineado */
 }
 
 .imagen-articulo {
@@ -749,7 +816,7 @@ footer {
 
 
 
-  
+
     .hero h1 {
         font-size: 2rem
     }
@@ -901,7 +968,7 @@ footer {
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: center;
-      
+
     }
 
     .seo-herrramientas {
