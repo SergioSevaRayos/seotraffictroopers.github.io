@@ -60,7 +60,7 @@ body {
 .cta-herramientas:hover,
 .cta:hover {
     background-color: #333;
-    color: #fff
+    color: #fff;
 }
 
 .cta-herramientas {
@@ -79,7 +79,12 @@ body {
     flex-direction: column;
     align-items: center
 }
-
+.herramientas h3{
+    color: #333;
+}
+.quien-soy h3{
+    color: #333;
+}
 .herramienta {
     display: grid;
     justify-items: center;
@@ -480,7 +485,10 @@ footer {
 
 }
 
-
+.descripcion-inicio h3{
+    display: grid;
+    color: #333;
+}
 .hero::before {
     /* Pseudo-elemento para el fondo */
     content: "";
@@ -501,6 +509,10 @@ footer {
     text-align: center;
     padding: 20px;
 }
+.hero-content > h3{
+    color: white;
+}
+
 
 .hero h2 {
     font-size: 3rem;
@@ -747,6 +759,10 @@ footer {
     .hero h1 {
         font-size: 2rem
     }
+    h3 {
+        font-size: 2rem;
+        color: white;
+    }
 
     .hero p {
         font-size: 1.2rem
@@ -827,7 +843,10 @@ footer {
     .hero h1 {
         font-size: 2rem
     }
-
+    .hero > h3 {
+        font-size: 2rem;
+        color: white;
+    }
     .hero p {
         font-size: 1.2rem
     }
@@ -872,13 +891,25 @@ footer {
         font-size: 22px
     }
 
-
-
+    
+    .dropdown-content a, nav a {
+        font-size: 15px;
+    }
     .header-right h1 {
         font-size: 40px;
         letter-spacing: 5px
     }
 
+    h1 {
+        font-size: 30px;
+    }
+    .header-right h2 {
+        font-size: 28px;
+    }
+    h3 {
+        font-size: 25px;
+        color: white;
+    }
     .header-right button {
         font-size: 18px
     }
