@@ -13,16 +13,22 @@ if (menuToggle && navLinks) {
 document.getElementById("currentYear").innerHTML = new Date().getFullYear();
 
 document.addEventListener("DOMContentLoaded", function () {
-    const gridItems = document.querySelectorAll(".grid-item");
+    const elements = document.querySelectorAll(".grid-item, .termino,.grid-item-blog");
 
     const checkVisibility = () => {
-        gridItems.forEach((item) => {
-            const itemTop = item.getBoundingClientRect().top;
-            const itemBottom = item.getBoundingClientRect().bottom;
+        let delay = 0; // Inicializamos el retardo en 0
+
+        elements.forEach((element) => {
+            const elementTop = element.getBoundingClientRect().top;
+            const elementBottom = element.getBoundingClientRect().bottom;
 
             // Verifica si el elemento está en el viewport
-            if (itemTop < window.innerHeight && itemBottom > 0) {
-                item.classList.add("visible");
+            if (elementTop < window.innerHeight && elementBottom > 0) {
+                // Aplicamos un retardo incremental a cada elemento
+                setTimeout(() => {
+                    element.classList.add("visible");
+                }, delay);
+                delay += 15; // Incrementamos el retardo para el siguiente elemento (ajusta este valor para controlar la velocidad)
             }
         });
     };
@@ -31,4 +37,3 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener("scroll", checkVisibility);
     checkVisibility(); // Verifica la visibilidad al cargar la página
 });
-
