@@ -285,7 +285,7 @@ header {
 
 
 
-.header-right h2 {
+.header-right p {
     font-size: 80px;
     letter-spacing: 15px;
     margin: 0;
@@ -734,7 +734,7 @@ footer {
 
 
 
-    .header-right h2 {
+    .header-right p {
         font-size: 50px;
         letter-spacing: 10px
     }
@@ -907,7 +907,7 @@ footer {
     h1 {
         font-size: 30px;
     }
-    .header-right h2 {
+    .header-right p {
         font-size: 28px;
     }
     .hero-content h3{
