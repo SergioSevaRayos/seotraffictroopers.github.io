@@ -603,18 +603,11 @@ h2 {
 }
 
 .grid-item {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: transform .3s, _ .3s;
     display: flex;
     justify-content: space-around;
     align-items: center
 }
 
-.grid-item.visible {
-    opacity: 1;
-    transform: translateY(0)
-}
 
 .grid-item h3 {
     font-size: 1.5rem;
