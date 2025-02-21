@@ -13,7 +13,7 @@ if (menuToggle && navLinks) {
 document.getElementById("currentYear").innerHTML = new Date().getFullYear();
 
 document.addEventListener("DOMContentLoaded", function () {
-    const elements = document.querySelectorAll(".grid-item, .termino,.grid-item-blog");
+    const elements = document.querySelectorAll(".termino");
 
     const checkVisibility = () => {
         let delay = 0; // Inicializamos el retardo en 0

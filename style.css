@@ -40,17 +40,36 @@ body {
 
 .cta,
 .cta-herramientas {
-    padding: 15px 30px;
+    display: flex; /* Activa flexbox */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    height: auto;
+    width: auto;
+    padding: 10px;
     border-radius: 5px;
     font-size: 1.1rem;
     background-color: gold;
     color: #333;
     transition: background-color .3s;
-    margin: 30px
+    text-align: center;
+    text-decoration: none; /* Evita el subrayado del enlace */
 }
 
+
 .cta {
-    display: inline-block
+    display: inline-block;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* Ajusta el espacio entre elementos */
+    padding-bottom: 50px;
+}
+
+.grid-container h3 {
+    text-align: center;
 }
 
 .cta-herramientas:hover,
@@ -75,12 +94,15 @@ body {
     flex-direction: column;
     align-items: center
 }
-.herramientas h3{
+
+.herramientas h3 {
     color: #333;
 }
-.quien-soy h3{
+
+.quien-soy h3 {
     color: #333;
 }
+
 .herramienta {
     display: grid;
     justify-items: center;
@@ -103,6 +125,23 @@ body {
     margin: 10px;
 }
 
+.grid-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.grid-item a {
+    text-align: center;
+}
+
+.grid-item>div>img {
+    height: 250px;
+    width: auto;
+
+}
 
 .herramienta img {
     max-width: 100px;
@@ -110,7 +149,7 @@ body {
     margin-bottom: 10px
 }
 
-.grid-item>div>img,
+
 .seo-herrramientas {
     height: 200px;
     width: auto
@@ -163,6 +202,10 @@ body {
     padding: 10px 20px;
     margin-right: 10px;
     cursor: pointer
+}
+
+.destacados {
+    margin: 1rem;
 }
 
 .sitemap a,
@@ -415,7 +458,8 @@ footer {
     /* Bordes redondeados */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     /* Sombra suave */
-    opacity: 0; /* Inicialmente oculto */
+    opacity: 0;
+    /* Inicialmente oculto */
     transform: translateY(50px);
     transition: transform .3s, _ .3s;
     /* Transición para el efecto hover */
@@ -425,10 +469,12 @@ footer {
     box-shadow: 0 2px 5px rgba(124, 112, 0, 0.781);
     /* Escalar al hacer hover */
 }
+
 .termino.visible {
     opacity: 1;
     transform: translateY(0)
 }
+
 .termino h3 {
     color: rgb(173, 148, 2);
     text-align: center;
@@ -481,10 +527,11 @@ footer {
 
 }
 
-.descripcion-inicio h3{
+.descripcion-inicio h3 {
     display: grid;
     color: #333;
 }
+
 .hero::before {
     /* Pseudo-elemento para el fondo */
     content: "";
@@ -523,7 +570,7 @@ footer {
     margin: 30px
 }
 
-.grid-container>h1,
+
 .quien-soy>h1,
 h2 {
     text-align: center
@@ -539,7 +586,7 @@ h2 {
 
 .grid-item,
 .grid-item-blog {
-    padding: 30px;
+    padding: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, .715);
     background-color: #fff;
@@ -556,6 +603,7 @@ h2 {
     align-items: center;
     text-align: justify
 }
+
 .introduccion,
 .faq,
 .cta-final {
@@ -569,24 +617,14 @@ h2 {
     max-width: 90%
 }
 
-.grid-container {
-    display: grid;
-    align-items: center;
-    gap: 30px;
-    margin: 30px
-}
+
 
 .grid-item-blog {
     display: grid;
     justify-items: center;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: transform .3s, _ .3s;
+
 }
-.grid-item-blog.visible{
-    opacity: 1;
-    transform: translateY(0)
-}
+
 .grid-item-blog:hover,
 .grid-item:hover {
     transform: translateY(-5px);
@@ -596,12 +634,6 @@ h2 {
 .grid-item-blog h3 {
     font-size: 1.9rem;
     margin-bottom: 15px
-}
-
-.grid-item {
-    display: flex;
-    justify-content: space-around;
-    align-items: center
 }
 
 
@@ -614,7 +646,8 @@ h2 {
 .blog {
     display: flex;
     flex-direction: column;
-    align-items: center
+    align-items: center;
+    margin: 25px;
 }
 
 .blog-ext {
@@ -752,6 +785,7 @@ footer {
     .hero h1 {
         font-size: 2rem
     }
+
     h3 {
         font-size: 2rem;
         color: white;
@@ -761,10 +795,6 @@ footer {
         font-size: 1.2rem
     }
 
-    .grid-container {
-        grid-template-columns: 1fr;
-        padding: 20px
-    }
 
     .grid-item,
     .grid-item-blog {
@@ -836,20 +866,17 @@ footer {
     .hero h1 {
         font-size: 2rem
     }
-    .hero > h3 {
+
+    .hero>h3 {
         font-size: 2rem;
         color: white;
     }
+
     .hero p {
         font-size: 1.2rem
     }
 
-    .grid-container {
-        display: flex;
-        flex-direction: column;
-        grid-template-columns: 1fr;
-        margin: 0
-    }
+
 
     .grid-item,
     .grid-item-blog {
@@ -883,33 +910,49 @@ footer {
     body {
         font-size: 18px
     }
+
     p {
-        text-align: justify; /* Texto justificado */
-        word-wrap: break-word; /* Rompe palabras largas para evitar espacios */
-        -webkit-hyphens: auto; /* Habilitar guiones en Safari */
-        -moz-hyphens: auto; /* Habilitar guiones en Firefox */
-        -ms-hyphens: auto; /* Habilitar guiones en Internet Explorer */
-        hyphens: auto; /* Habilitar guiones en otros navegadores */
+        text-align: justify;
+        /* Texto justificado */
+        word-wrap: break-word;
+        /* Rompe palabras largas para evitar espacios */
+        -webkit-hyphens: auto;
+        /* Habilitar guiones en Safari */
+        -moz-hyphens: auto;
+        /* Habilitar guiones en Firefox */
+        -ms-hyphens: auto;
+        /* Habilitar guiones en Internet Explorer */
+        hyphens: auto;
+        /* Habilitar guiones en otros navegadores */
     }
+
     .descripcion-inicio h3 {
         text-align: center;
     }
-    .grid-container h3{
-        color: #333;
+
+    .grid-item>div>img {
+        height: 150px;
+        width: auto;
+
     }
-    .cta{
+
+    .cta {
         height: auto;
         width: auto;
         text-align: center;
         padding: 5px;
         margin: 10px;
     }
-    .grid-item  a{
+
+    .grid-item a {
         text-align: center;
     }
-    .dropdown-content a, nav a {
+
+    .dropdown-content a,
+    nav a {
         font-size: 18px;
     }
+
     .header-right h1 {
         font-size: 40px;
         letter-spacing: 5px
@@ -919,22 +962,35 @@ footer {
         font-size: 30px;
         text-align: left;
     }
+    .hero-arriba p{
+        text-align: justify;
+    }
     .header-right p {
         font-size: 28px;
         text-align: center;
     }
-    .hero-content h3{
-        color:white;
+
+    .hero-content h3 {
+        color: white;
     }
-    
+    .descripcion-inicio > h3{
+        text-align: left;
+    }
+
+    .grid-container h2 {
+        text-align: left;
+    }
+
     .grid-item h3 {
         font-size: 25px;
         color: #333;
     }
+
     h3 {
         font-size: 25px;
         color: #333;
     }
+
     .header-right button {
         font-size: 18px
     }
@@ -995,6 +1051,7 @@ footer {
     .hero p {
         font-size: 20px
     }
+
 
     .grid-item,
     .grid-item-blog {
