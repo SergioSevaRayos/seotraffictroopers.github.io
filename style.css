@@ -67,6 +67,10 @@ body {
     /* Ajusta el espacio entre elementos */
     padding-bottom: 50px;
 }
+.grid-container h1 {
+    text-align: center;
+}
+
 
 .grid-container h3 {
     text-align: center;
@@ -319,7 +323,7 @@ header {
 }
 
 .hero-arriba>p {
-    text-align: center;
+    text-align: justify;
 }
 
 
@@ -867,11 +871,6 @@ footer {
         font-size: 2rem
     }
 
-    .hero>h3 {
-        font-size: 2rem;
-        color: white;
-    }
-
     .hero p {
         font-size: 1.2rem
     }
@@ -1023,20 +1022,6 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center
-    }
-
-
-
-    .foto-spa {
-        float: none;
-        width: 200px;
-        height: auto
-    }
-
-    .foto-spa2 {
-        float: none;
-        width: 150px;
-        height: auto
     }
 
     .blog-ext {
