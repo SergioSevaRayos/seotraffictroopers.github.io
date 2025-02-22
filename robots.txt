@@ -1,6 +1,7 @@
 User-agent: *
-Disallow: /sitemap.xml 
 Disallow: /aviso-legal.html
 Disallow: /politica-privacidad.html
 Disallow: /politica-cookies.html
 Disallow: /mapa-del-sitio.html
+
+Sitemap: https://www.seotraffictroopers.com/sitemap.xml
