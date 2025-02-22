@@ -4,158 +4,165 @@
 
   <url>
     <loc>https://www.seotraffictroopers.com</loc>
-    <lastmod>2025-02-12</lastmod>
-    <changefreq>monthly</changefreq> 
+    <lastmod>2024-04-26</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
-  
+
   <url>
     <loc>https://www.seotraffictroopers.com/contacto.html</loc>
-    <lastmod>2025-02-12</lastmod>
-    <changefreq>monthly</changefreq> 
+    <lastmod>2024-04-26</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
   <url>
     <loc>https://www.seotraffictroopers.com/quienes-somos.html</loc>
-    <lastmod>2025-02-12</lastmod>
-    <changefreq>monthly</changefreq> 
+    <lastmod>2024-04-26</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
   <url>
     <loc>https://www.seotraffictroopers.com/diccionario.html</loc>
-    <lastmod>2025-02-12</lastmod>
-    <changefreq>yearly</changefreq> 
+    <lastmod>2024-04-26</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!--Servicios _______________________________________________Inicio-->
+
   <url>
     <loc>https://www.seotraffictroopers.com/servicios.html</loc>
-    <lastmod>2025-02-12</lastmod>
-    <changefreq>yearly</changefreq> 
+    <lastmod>2024-04-26</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://www.seotraffictroopers.com/seo-basico.html</loc>
-    <lastmod>2025-02-12</lastmod>
-    <changefreq>yearly</changefreq> 
+    <lastmod>2024-04-26</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-    <image:loc>https://www.seotraffictroopers.com/media/img/seo-basico2.webp</image:loc>
-    <image:caption>El SEO es crucial para el éxito online de cualquier negocio. Una buena estrategia SEO mejora la visibilidad en los motores de búsqueda.</image:caption>
-    <image:title>Importancia del SEO</image:title>
+      <image:loc>https://www.seotraffictroopers.com/media/img/seo-basico2.webp</image:loc>
+      <image:caption>El SEO es crucial para el éxito online de cualquier negocio. Una buena estrategia SEO mejora la visibilidad en los motores de búsqueda.</image:caption>
+      <image:title>Importancia del SEO</image:title>
     </image:image>
   </url>
+
   <url>
     <loc>https://www.seotraffictroopers.com/seo-basico-mensual.html</loc>
-    <lastmod>2025-02-12</lastmod>
-    <changefreq>yearly</changefreq> 
+    <lastmod>2024-04-26</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-    <image:loc>https://www.seotraffictroopers.com/media/img/seo-basico-mensual2.webp</image:loc>
-    <image:caption>El SEO es crucial para el éxito online de cualquier negocio. Una buena estrategia SEO mejora la visibilidad en los motores de búsqueda.</image:caption>
-    <image:title>Importancia del SEO mensual</image:title>
+      <image:loc>https://www.seotraffictroopers.com/media/img/seo-basico-mensual2.webp</image:loc>
+      <image:caption>El SEO es crucial para el éxito online de cualquier negocio. Una buena estrategia SEO mejora la visibilidad en los motores de búsqueda.</image:caption>
+      <image:title>Importancia del SEO mensual</image:title>
     </image:image>
   </url>
+
   <url>
     <loc>https://www.seotraffictroopers.com/seo-completo.html</loc>
-    <lastmod>2025-02-12</lastmod>
-    <changefreq>yearly</changefreq> 
+    <lastmod>2024-04-26</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-    <image:loc>https://www.seotraffictroopers.com/media/img/seo-avanzado2.webp</image:loc>
-    <image:caption>El SEO es crucial para el éxito online de cualquier negocio. Una buena estrategia SEO mejora la visibilidad en los motores de búsqueda.</image:caption>
-    <image:title>Importancia del SEO avanzado</image:title>
+      <image:loc>https://www.seotraffictroopers.com/media/img/seo-avanzado2.webp</image:loc>
+      <image:caption>El SEO es crucial para el éxito online de cualquier negocio. Una buena estrategia SEO mejora la visibilidad en los motores de búsqueda.</image:caption>
+      <image:title>Importancia del SEO avanzado</image:title>
     </image:image>
   </url>
+
   <url>
     <loc>https://www.seotraffictroopers.com/seo-avanzado-mensual.html</loc>
-    <lastmod>2025-02-12</lastmod>
-    <changefreq>yearly</changefreq> 
+    <lastmod>2024-04-26</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-    <image:loc>https://www.seotraffictroopers.com/media/img/seo-avanzado-mensual2.webp</image:loc>
-    <image:caption>El SEO es crucial para el éxito online de cualquier negocio. Una buena estrategia SEO mejora la visibilidad en los motores de búsqueda.</image:caption>
-    <image:title>Importancia del SEO avanzado mensual</image:title>
+      <image:loc>https://www.seotraffictroopers.com/media/img/seo-avanzado-mensual2.webp</image:loc>
+      <image:caption>El SEO es crucial para el éxito online de cualquier negocio. Una buena estrategia SEO mejora la visibilidad en los motores de búsqueda.</image:caption>
+      <image:title>Importancia del SEO avanzado mensual</image:title>
     </image:image>
   </url>
-  <!--Servicios_______________________________________________Fin-->
 
-  <!--Herramientas _______________________________________________Inicio-->
   <url>
     <loc>https://www.seotraffictroopers.com/herramientas.html</loc>
-    <lastmod>2025-02-12</lastmod>
-    <changefreq>yearly</changefreq> 
+    <lastmod>2024-04-26</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+
   <url>
     <loc>https://www.seotraffictroopers.com/creador-robots.html</loc>
-    <lastmod>2025-02-12</lastmod>
-    <changefreq>yearly</changefreq> 
+    <lastmod>2024-04-26</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-    <image:loc>https://www.seotraffictroopers.com/media/img/seo-robots.webp</image:loc>
-    <image:caption>Controla el acceso de los motores de búsqueda a tu sitio web. Crea tu archivo robots.txt de forma rápida y sencilla.</image:caption>
-    <image:title>Creador robots.txt</image:title>
+      <image:loc>https://www.seotraffictroopers.com/media/img/seo-robots.webp</image:loc>
+      <image:caption>Controla el acceso de los motores de búsqueda a tu sitio web. Crea tu archivo robots.txt de forma rápida y sencilla.</image:caption>
+      <image:title>Creador robots.txt</image:title>
     </image:image>
   </url>
+
   <url>
     <loc>https://www.seotraffictroopers.com/creador-stiemap.html</loc>
-    <lastmod>2025-02-12</lastmod>
-    <changefreq>yearly</changefreq> 
+    <lastmod>2024-04-26</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
-    <image:loc>https://www.seotraffictroopers.com/media/img/seo-stitemap.webp</image:loc>
-    <image:caption>Crea un sitemap XML para tu sitio web de forma rápida y sencilla. Facilita a los motores de búsqueda la indexación de tus páginas y mejora tu SEO.</image:caption>
-    <image:title>Creador sitemap.xml</image:title>
+      <image:loc>https://www.seotraffictroopers.com/media/img/seo-stitemap.webp</image:loc>
+      <image:caption>Crea un sitemap XML para tu sitio web de forma rápida y sencilla. Facilita a los motores de búsqueda la indexación de tus páginas y mejora tu SEO.</image:caption>
+      <image:title>Creador sitemap.xml</image:title>
     </image:image>
   </url>
-    <url>
-    <loc>https://www.seotraffictroopers.com/creador-metaetiquetas.html</loc>
-    <lastmod>2025-02-12</lastmod>
-    <changefreq>yearly</changefreq> 
-    <priority>0.8</priority>
-    <image:image>
-    <image:loc>https://www.seotraffictroopers.com/media/img/seo-etiquetas.webp</image:loc>
-    <image:caption>Crea metaetiquetas perfectas para el SEO de tu web. ¡Fácil y rápido!</image:caption>
-    <image:title>Generador meta etiquetas</image:title>
-    </image:image>
-  </url>
-  <!--Herramientas_______________________________________________Fin-->
 
-  <!--Blog y artículos _______________________________________________Inicio-->
+  <url>
+    <loc>https://www.seotraffictroopers.com/creador-metaetiquetas.html</loc>
+    <lastmod>2024-04-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.seotraffictroopers.com/media/img/seo-etiquetas.webp</image:loc>
+      <image:caption>Crea metaetiquetas perfectas para el SEO de tu web. ¡Fácil y rápido!</image:caption>
+      <image:title>Generador meta etiquetas</image:title>
+    </image:image>
+  </url>
+
   <url>
     <loc>https://www.seotraffictroopers.com/blog.html</loc>
-    <lastmod>2025-02-12</lastmod>
-    <changefreq>weekly</changefreq>  
+    <lastmod>2024-04-26</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+
   <url>
     <loc>https://www.seotraffictroopers.com/articulo-importancia-seo.html</loc>
-    <lastmod>2025-02-12</lastmod>
-    <changefreq>monthly </changefreq> 
+    <lastmod>2024-04-26</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
-    <image:loc>https://www.seotraffictroopers.com/media/img/seo.webp</image:loc>
-    <image:caption>El SEO es crucial para el éxito online de cualquier negocio. Una buena estrategia SEO mejora la visibilidad en los motores de búsqueda.</image:caption>
-    <image:title>Importancia del SEO</image:title>
+      <image:loc>https://www.seotraffictroopers.com/media/img/seo.webp</image:loc>
+      <image:caption>El SEO es crucial para el éxito online de cualquier negocio. Una buena estrategia SEO mejora la visibilidad en los motores de búsqueda.</image:caption>
+      <image:title>Importancia del SEO</image:title>
     </image:image>
   </url>
+
   <url>
     <loc>https://www.seotraffictroopers.com/articulo-errores-seo.html</loc>
-    <lastmod>2025-02-12</lastmod>
-    <changefreq>monthly </changefreq> 
+    <lastmod>2024-04-26</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://www.seotraffictroopers.com/media/img/seoerror.webp</image:loc>
       <image:caption>Evita errores comunes de SEO que dañan tu estrategia online. Optimiza tu presencia y atrae tráfico de calidad.</image:caption>
-      <image:title>10 errores de SEO que debes evitar
-      </image:title>
+      <image:title>10 errores de SEO que debes evitar</image:title>
     </image:image>
   </url>
-  <url> 
+
+  <url>
     <loc>https://www.seotraffictroopers.com/articulo-key-seo.html</loc>
-    <lastmod>2025-02-12</lastmod>
-    <changefreq>monthly </changefreq> 
+    <lastmod>2024-04-26</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
     <image:image>
       <image:loc>https://www.seotraffictroopers.com/media/img/seokey.webp</image:loc>
@@ -163,30 +170,32 @@
       <image:title>Cómo elegir las palabras clave adecuadas para tu estrategia SEO</image:title>
     </image:image>
   </url>
-  <!--Blog y artículos _______________________________________________Fin-->
-  
+
   <url>
     <loc>https://www.seotraffictroopers.com/politica-privacidad.html</loc>
-    <lastmod>2025-02-12</lastmod>
-    <changefreq>yearly</changefreq> 
+    <lastmod>2024-04-26</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://www.seotraffictroopers.com/politica-cookies.html</loc>
-    <lastmod>2025-02-12</lastmod>
-    <changefreq>yearly</changefreq> 
+    <lastmod>2024-04-26</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://www.seotraffictroopers.com/aviso-legal.html</loc>
-    <lastmod>2025-02-12</lastmod>
-    <changefreq>yearly</changefreq> 
+    <lastmod>2024-04-26</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
+
   <url>
     <loc>https://www.seotraffictroopers.com/mapa-del-sitio.html</loc>
-    <lastmod>2025-02-12</lastmod>
-    <changefreq>yearly</changefreq> 
+    <lastmod>2024-04-26</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
 
