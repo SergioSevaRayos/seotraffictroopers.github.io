@@ -20,7 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
 
     <script type="application/ld+json">
         {
@@ -74,24 +74,25 @@
             </div>
             <div class="header-derecha">
                 <p>Auditorías SEO</p>
-                <button type="button">¿Quiéres
-                    sabar más?<a href="servicios.html" rel="noreferrer"></a></button>
+                <a href="servicios.html" rel="noreferrer"><button type="button">¿Quiéres
+                    sabar más?</button></a>
             </div>
         </div>
     </header>
 
 
         <main>
-            <a href="https://wa.me/34633841203?text=Hola,%20me%20interesa%20tu%20servicio" class="whatsapp-float"
-                target="_blank">
-                <img src="media/img/logowhatsapp.webp" alt="Contactar por WhatsApp">
-            </a>
+            <section class="whatsapp">
+                <a href="https://wa.me/34633841203?text=Hola,%20me%20interesa%20tu%20servicio" target="_blank">
+                    <img src="media/img/logowhatsapp.webp" alt="Contactar por WhatsApp" style="height: 50px;">
+                </a>
+            </section>
 
             <section class="hero-arriba">
                 <h1>Generador de sitemap.xml online y gratis</h1>
                 <p>Descubre el potencial de tu sitio web y alcanza tus objetivos de negocio.</p>
-                <a href="contacto.html#seccion-importante" rel="noreferrer" rel="noreferrer" class="cta">¡Solicita tu
-                    Auditoría!</a>
+                <a href="contacto.html#seccion-importante" rel="noreferrer" ><button type="button">¡Solicita tu
+                    Auditoría!</button></a>
             </section>
 
 
@@ -155,9 +156,9 @@
                     </form>
 
                     <textarea id="sitemap-output" readonly></textarea>
-                    <a id="download-link-sitemap" href="#" download="sitemap.xml">Descargar sitemap.xml</a>
+                    <a id="download-link-sitemap" download="sitemap.xml"><button type="button">Descargar sitemap.xml</button></a>
                 </section>
-                <a href="herramientas.html" class="cta">Atrás</a>
+                <a href="herramientas.html"><button type="button">Herramientas</button></a>
 
                 <script>
                     const formSitemap = document.getElementById('sitemap-form');
