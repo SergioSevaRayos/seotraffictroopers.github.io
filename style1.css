@@ -1120,6 +1120,41 @@ button:hover {
     height: auto
 }
 /*==================================================== Fin Whatsapp*/
+
+.sitemap{
+    display: flex;
+    flex-direction: column;
+    background-color: #3333335b;
+    /* Color de fondo del nav */
+    /* Espaciado interno */
+    box-shadow: 0px 4px 10px rgb(0, 0, 0);
+    /* Sombra suave */
+    list-style: none;
+    /* Quita los puntos de la lista */
+    margin: 20px;
+    padding: 20px;
+    
+    /* Distribuye los elementos en línea */
+    justify-content: space-between;
+    /* Espaciado entre elementos */
+    align-items: start;
+    
+}
+.sitemap > ul > li{
+    list-style: none;
+
+}
+.sitemap > ul > li > a{
+    list-style: none;
+    text-decoration: none;
+    color: inherit; /* Hereda el color del texto del contenedor */
+    transition: 200ms;
+}
+
+.sitemap > ul > li > a:hover{
+    color: blue;
+}
+
 /*==================================================== Inicio footer*/
 footer {
     background-image: url(media/img/banner.webp);
