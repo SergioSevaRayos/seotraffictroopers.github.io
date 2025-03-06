@@ -7,31 +7,7 @@
 
     <!-- Título Optimizado -->
     <title>Importancia del SEO | Posicionamiento Web</title>
-    <link rel="stylesheet" href="cookies/pdcc.min.css">
-    <script charset="utf-8" src="cookies/pdcc.min.js"></script>
-    <script type="text/javascript">
-        PDCookieConsent.config({
-            "defaultLang": "es",
-            "brand": {
-                "dev": false,
-                "name": "SEO Traffic Troopers",
-                "url": "https://www.seotraffictroopers.com/index.html",
-                "websiteOwner": "SEO Traffic Troopers"
-            },
-            "cookiePolicyLink": "https://www.seotraffictroopers.com/politica-cookies.html",
-            "hideModalIn": ["https://www.seotraffictroopers.com/politica-cookies.html"],
-            "styles": {
-                "primaryButton": {
-                    "bgColor": "#A1FFA1",
-                    "txtColor": "#036900"
-                },
-                "secondaryButton": {
-                    "bgColor": "#EEEEEE",
-                    "txtColor": "#333333"
-                }
-            }
-        });
-    </script>
+    <script src="cookies.js"></script>
 
     <!-- Meta Descripción Optimizada -->
     <meta name="description"
@@ -200,6 +176,24 @@
                 </div>
             </div>
         </footer>
+    </div>
+    <div id="cookie-banner" class="cookie-banner">
+        <p>Este sitio web utiliza cookies para mejorar tu experiencia. Puedes aceptarlas o rechazarlas. <a
+                href="politica-cookies.html">Más información</a></p>
+        <div class="cookie-buttons">
+            <button id="accept-cookies">Aceptar</button>
+            <button id="reject-cookies">Rechazar</button>
+            <button id="config-cookies">Configurar</button>
+        </div>
+    </div>
+
+    <div id="cookie-config" class="cookie-config" style="display: none;">
+        <h3>Configuración de Cookies</h3>
+        <p>Selecciona las cookies que deseas permitir:</p>
+        <label><input type="checkbox" id="cookies-necesarias" checked disabled> Necesarias</label><br>
+        <label><input type="checkbox" id="cookies-analiticas"> Analíticas</label><br>
+        <label><input type="checkbox" id="cookies-marketing"> Marketing</label><br>
+        <button id="save-cookies">Guardar configuración</button>
     </div>
 
     <!-- Scripts -->

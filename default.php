@@ -2,31 +2,7 @@
 <html lang="es">
     <head>
         <title>Página por defecto</title>
-    <link rel="stylesheet" href="cookies/pdcc.min.css">
-    <script charset="utf-8" src="cookies/pdcc.min.js"></script>
-    <script type="text/javascript">
-        PDCookieConsent.config({
-            "defaultLang": "es",
-            "brand": {
-                "dev": false,
-                "name": "SEO Traffic Troopers",
-                "url": "https://www.seotraffictroopers.com/index.html",
-                "websiteOwner": "SEO Traffic Troopers"
-            },
-            "cookiePolicyLink": "https://www.seotraffictroopers.com/politica-cookies.html",
-            "hideModalIn": ["https://www.seotraffictroopers.com/politica-cookies.html"],
-            "styles": {
-                "primaryButton": {
-                    "bgColor": "#A1FFA1",
-                    "txtColor": "#036900"
-                },
-                "secondaryButton": {
-                    "bgColor": "#EEEEEE",
-                    "txtColor": "#333333"
-                }
-            }
-        });
-    </script>
+    
         <link rel="icon" type="image/x-icon" href="https://hpanel.hostinger.com/favicons/hostinger.png">
         <meta charset="utf-8">
         <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
