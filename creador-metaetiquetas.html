@@ -71,7 +71,7 @@
         }
         </script>
     <link rel="sitemap" type="application/xml" title="Sitemap" href="https://www.seotraffictroopers.com/sitemap.xml">
-    
+
 </head>
 
 <body>
@@ -116,13 +116,13 @@
                 <h1>Generador de metaetiquetas para SEO</h1>
                 <p>Descubre el potencial de tu sitio web y alcanza tus objetivos de negocio.</p>
                 <a href="contacto.html" rel="noreferrer"><button type="button">¡Solicita tu
-                    Auditoría!</button></a>
+                        Auditoría!</button></a>
             </section>
 
 
             <section class="herramientas">
                 <section class="generador-metaetiquetas">
-                    <h2 >Crea tus metaetiquetas</h2>
+                    <h2>Crea tus metaetiquetas</h2>
                     <p>Crea las metaetiquetas HTML esenciales para tu página web de forma rápida y sencilla.</p>
                     <p>
                         Las metaetiquetas son como la carta de presentación de tu sitio web ante los motores de búsqueda
@@ -168,6 +168,8 @@
                     <textarea id="metaetiquetas-output" readonly></textarea>
                 </section>
 
+                
+
                 <script>
                     const formMetaetiquetas = document.getElementById('metaetiquetas-form');
                     const tituloInput = document.getElementById('titulo');
@@ -182,35 +184,10 @@
                         const descripcion = descripcionInput.value;
                         const palabrasClave = palabrasClaveInput.value;
 
-                        let metaetiquetas = `<title>${titulo}</title>
-    <link rel="stylesheet" href="cookies/pdcc.min.css">
-    <script charset="utf-8" src="cookies/pdcc.min.js"></script>
-    <script type="text/javascript">
-        PDCookieConsent.config({
-            "defaultLang": "es",
-            "brand": {
-                "dev": false,
-                "name": "SEO Traffic Troopers",
-                "url": "https://www.seotraffictroopers.com/index.html",
-                "websiteOwner": "SEO Traffic Troopers"
-            },
-            "cookiePolicyLink": "https://www.seotraffictroopers.com/politica-cookies.html",
-            "hideModalIn": ["https://www.seotraffictroopers.com/politica-cookies.html"],
-            "styles": {
-                "primaryButton": {
-                    "bgColor": "#A1FFA1",
-                    "txtColor": "#036900"
-                },
-                "secondaryButton": {
-                    "bgColor": "#EEEEEE",
-                    "txtColor": "#333333"
-                }
-            }
-        });
-    </script>\n`;
-                        metaetiquetas += `<meta name="description" content="${descripcion}">\n`;
+                        let metaetiquetas = `< title > ${titulo}</title>\n`;
+                        metaetiquetas += `< meta name = "description" content = "${descripcion}" >\n`;
                         if (palabrasClave) {
-                            metaetiquetas += `<meta name="keywords" content="${palabrasClave}">\n`;
+                            metaetiquetas += `< meta name = "keywords" content = "${palabrasClave}" >\n`;
                         }
 
                         metaetiquetasOutput.value = metaetiquetas;
@@ -241,7 +218,7 @@
                 </div>
                 <div class="footer-logo">
                     <img src="media/img/logotipo2STT.webp" alt="SEO Traffic Troopers Logo"
-                    style="height: 120px; width: auto;">
+                        style="height: 120px; width: auto;">
                 </div>
                 <div class="footer-right">
                     <nav>
