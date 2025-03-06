@@ -162,13 +162,6 @@ header {
     background: #f9f9f9; /* Fondo suave */
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    opacity: 0; /* Inicialmente invisible */
-    transform: translateY(50px); /* Posición inicial: desplazado hacia abajo */
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* Transición suave */
-}
-.descripcion-inicio.visible  {
-    opacity: 1; /* Visible */
-    transform: translateY(0); /* Posición final: sin desplazamiento */
 }
 
 
@@ -194,7 +187,7 @@ header {
 }
 
 .descripcion-inicio a {
-    color: goldenrod;
+    color: blue;
     text-decoration: none;
     font-weight: bold;
 
@@ -246,7 +239,7 @@ header {
 
 .seccion h3 {
     font-size: 1.4rem;
-    color: goldenrod;
+    color: #333;
     margin-bottom: 1rem;
     border-bottom: 2px solid goldenrod;
     display: inline-block;
@@ -274,20 +267,19 @@ header {
 }
 
 .lista-destacada li strong {
-    color: goldenrod;
+    color: #333;
 }
 
 /* Estilos para los enlaces */
 .enlace-destacado {
-    color: goldenrod;
+    color: blue;
+    font-weight: bold;
     text-decoration: none;
-    border-bottom: 1px dashed goldenrod;
     transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
 .enlace-destacado:hover {
-    color: goldenrod;
-    border-bottom: 1px solid goldenrod;
+    text-decoration: underline;
 }
 /*==================================================== Fin descripcion-basico*/
 /*==================================================== Inicio herramientas*/
@@ -464,7 +456,7 @@ header {
 /* Estilos para los títulos de los términos */
 .termino h3 {
     font-size: 1.5rem;
-    color: goldenrod;
+    color: #333;
     margin-bottom: 1rem;
 }
 
@@ -493,7 +485,7 @@ header {
 /* Estilos para los títulos */
 .quien-soy h1 {
     font-size: 2.5rem;
-    color: goldenrod;
+    color: #333;
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -507,7 +499,7 @@ header {
 
 .quien-soy h3 {
     font-size: 1.5rem;
-    color: goldenrod;
+    color: #333;
     margin-bottom: 1rem;
 }
 
@@ -522,7 +514,7 @@ header {
 }
 .quien-soy strong a {
     text-decoration: none;
-    color: goldenrod;
+    color: #333;
     font-weight: bold;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -550,7 +542,7 @@ header {
 }
 
 .lista-destacada li strong {
-    color: goldenrod;
+    color: #333;
 }
 .quien-soy img {
     float: left; /* Hace que el texto rodee la imagen */
@@ -579,7 +571,7 @@ header {
 /* Estilos para los títulos */
 .blog h1 {
     font-size: 2.5rem;
-    color: goldenrod;
+    color: #333;
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -619,7 +611,7 @@ header {
 /* Estilos para los títulos de los artículos */
 .grid-item-blog h3 {
     font-size: 1.5rem;
-    color: goldenrod;
+    color: #333;
     margin: 1.5rem 1.5rem 1rem;
 }
 
@@ -649,21 +641,21 @@ header {
 /* Estilos para los títulos */
 .blog-ext h1 {
     font-size: 2.5rem;
-    color: goldenrod;
+    color: #333;
     margin-bottom: 1rem;
     text-align: center;
 }
 
 .blog-ext h2 {
     font-size: 1.8rem;
-    color: goldenrod;
+    color: #333;
     margin-bottom: 2rem;
     text-align: center;
 }
 
 .blog-ext h3 {
     font-size: 1.5rem;
-    color: goldenrod;
+    color: #333;
     margin-bottom: 1rem;
 }
 
@@ -696,7 +688,7 @@ header {
 }
 
 .lista-destacada li strong {
-    color: goldenrod;
+    color: #333;
 }
 /* Estilos para cada error */
 .error-item {
@@ -715,7 +707,7 @@ header {
 
 .error-item h3 {
     font-size: 1.5rem;
-    color: goldenrod;
+    color: #333;
     margin-bottom: 1rem;
 }
 
@@ -726,7 +718,7 @@ header {
 }
 
 .error-item strong {
-    color: goldenrod;
+    color: #333;
 }
 /*==================================================== Fin artículos blog*/
 /*==================================================== Inicio contacto*/
@@ -964,7 +956,7 @@ input:focus, textarea:focus {
     padding: 10px;
 }
 .presentacion-servicios a{
-    color: goldenrod;
+    color: blue;
     text-decoration: none;
     font-weight: bold;
 }
@@ -1131,7 +1123,12 @@ button:hover {
 }
 .sitemap > ul > li > a{
     text-decoration: none;
-    color: black;
+    color: #333;
+    font-weight: bold;
+}
+.sitemap > ul > li > a:hover{
+    color: blue;
+    text-decoration: underline;
 }
 /*==================================================== Fin mapa del sitio*/
 /*==================================================== Inicio footer*/
