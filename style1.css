@@ -20,7 +20,7 @@ small 0.875rem (notas al pie)
 */
 /*Estilos generales*/
 * {
-    font-family: Karla, sans-serif;
+    font-family: sans-serif;
     margin: 0px;
     padding: 0px;
     font-size: 1rem;
@@ -1172,11 +1172,14 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #f0f0f0;
+    background-color: goldenrod;
     padding: 10px;
     text-align: center;
     display: none;
     z-index: 1000;
+}
+.cookie-banner p{
+    font-weight: bold;
 }
 
 .cookie-banner.show {
@@ -1184,7 +1187,7 @@ footer {
 }
 
 .cookie-buttons button {
-    background-color: #007bff;
+    background-color: #333;
     color: white;
     border: none;
     padding: 5px 10px;
